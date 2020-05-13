@@ -11,7 +11,7 @@ const round4 = new Rounds("Round 5 ", 25, 5, 50, 2);
 var yellowGamePiece = new component(65, 65, "mehdi.png", 50, 60, "image");
 var explosion = new component(65, 65, "explosion.png", 50, 60, "image");
 var myScore = new component("20px", "Consolas", "white", 10, 20, "text");
-var mySound = new sound("sound.wav");
+var mySound = new sound("music.mp3");
 var crashSound = new sound("crash.wav");
 // var obstacle = new component(15, 195, "red", 465, 105);
 var myObstacles = [];
@@ -83,7 +83,10 @@ export function updateGameArea() {
     if (myGameArea.keys && myGameArea.keys[39]) {yellowGamePiece.speedX = 1; }
     if (myGameArea.keys && myGameArea.keys[38]) {yellowGamePiece.speedY = -1; }
     if (myGameArea.keys && myGameArea.keys[40]) {yellowGamePiece.speedY = 1; }
-
+    if (myGameArea.x && myGameArea.y) {
+        yellowGamePiece.x = myGameArea.x;
+        yellowGamePiece.y = myGameArea.y;
+    }
     yellowGamePiece.newPos();
     // // console.log(yellowGamePiece.speedX);
     // adam.update();
