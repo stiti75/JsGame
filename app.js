@@ -3,10 +3,10 @@ import {myGameArea} from "./gameArea.js";
 import {component} from "./component.js";
 
 const round0 = new Rounds("Round 1 ", 5, 4, 250, 0.8);
-const round1 = new Rounds("Round 2 ", 10, 5,250, 1.2);
-const round2 = new Rounds("Round 3 ", 15, 4, 250, 1.6);
-const round3 = new Rounds("Round 4 ", 20, 4,250, 1.8);
-const round4 = new Rounds("Round 5 ", 25, 5, 250, 2);
+const round1 = new Rounds("Round 2 ", 10, 5,200, 1.2);
+const round2 = new Rounds("Round 3 ", 15, 4, 200, 1.6);
+const round3 = new Rounds("Round 4 ", 20, 4,200, 1.8);
+const round4 = new Rounds("Round 5 ", 25, 5, 200, 2);
 
 var yellowGamePiece = new component(55, 55, "mehdi.png", 50, 60, "image");
 var explosion = new component(55, 55, "explosion.png", 50, 60, "image");
@@ -87,7 +87,7 @@ export function updateGameArea() {
         yellowGamePiece.x = myGameArea.x;
         yellowGamePiece.y = myGameArea.y;
     }
-    yellowGamePiece.newPos();
+    // yellowGamePiece.newPos();
     // // console.log(yellowGamePiece.speedX);
     // adam.update();
     yellowGamePiece.update();
