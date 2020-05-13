@@ -8,8 +8,8 @@ const round2 = new Rounds("Round 3 ", 15, 4, 250, 1.6);
 const round3 = new Rounds("Round 4 ", 20, 4,250, 1.8);
 const round4 = new Rounds("Round 5 ", 25, 5, 250, 2);
 
-var yellowGamePiece = new component(65, 65, "mehdi.png", 50, 60, "image");
-var explosion = new component(65, 65, "explosion.png", 50, 60, "image");
+var yellowGamePiece = new component(45, 45, "mehdi.png", 50, 60, "image");
+var explosion = new component(45, 45, "explosion.png", 50, 60, "image");
 var myScore = new component("20px", "Consolas", "white", 10, 20, "text");
 var mySound = new sound("cardi.mp3");
 var crashSound = new sound("crash.wav");
