@@ -77,17 +77,17 @@ export function updateGameArea() {
 
     myGameArea.clear();
     extracted();
-    // yellowGamePiece.speedX = 0;
-    // yellowGamePiece.speedY = 0;
-    // if (myGameArea.keys && myGameArea.keys[37]) {yellowGamePiece.speedX = -1; }
-    // if (myGameArea.keys && myGameArea.keys[39]) {yellowGamePiece.speedX = 1; }
-    // if (myGameArea.keys && myGameArea.keys[38]) {yellowGamePiece.speedY = -1; }
-    // if (myGameArea.keys && myGameArea.keys[40]) {yellowGamePiece.speedY = 1; }
+    yellowGamePiece.speedX = 0;
+    yellowGamePiece.speedY = 0;
+    if (myGameArea.keys && myGameArea.keys[37]) {yellowGamePiece.speedX = -1; }
+    if (myGameArea.keys && myGameArea.keys[39]) {yellowGamePiece.speedX = 1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {yellowGamePiece.speedY = -1; }
+    if (myGameArea.keys && myGameArea.keys[40]) {yellowGamePiece.speedY = 1; }
     if (myGameArea.x && myGameArea.y) {
         yellowGamePiece.x = myGameArea.x;
         yellowGamePiece.y = myGameArea.y;
     }
-    // yellowGamePiece.newPos();
+    yellowGamePiece.newPos();
     // // console.log(yellowGamePiece.speedX);
     // adam.update();
     yellowGamePiece.update();
