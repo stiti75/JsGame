@@ -2,16 +2,16 @@ import {Rounds} from './rounds.js'
 import {myGameArea} from "./gameArea.js";
 import {component} from "./component.js";
 
-const round0 = new Rounds("Round 1 ", 5, 4, 250, 0.5);
-const round1 = new Rounds("Round 2 ", 10, 5,200, 0.8);
-const round2 = new Rounds("Round 3 ", 15, 4, 150, 1.2);
-const round3 = new Rounds("Round 4 ", 20, 4,100, 1.5);
-const round4 = new Rounds("Round 5 ", 25, 5, 50, 2);
+const round0 = new Rounds("Round 1 ", 5, 4, 450, 0.8);
+const round1 = new Rounds("Round 2 ", 10, 5,450, 1.2);
+const round2 = new Rounds("Round 3 ", 15, 4, 450, 1.6);
+const round3 = new Rounds("Round 4 ", 20, 4,450, 1.8);
+const round4 = new Rounds("Round 5 ", 25, 5, 450, 2);
 
 var yellowGamePiece = new component(65, 65, "mehdi.png", 50, 60, "image");
 var explosion = new component(65, 65, "explosion.png", 50, 60, "image");
 var myScore = new component("20px", "Consolas", "white", 10, 20, "text");
-var mySound = new sound("music.mp3");
+var mySound = new sound("cardi.mp3");
 var crashSound = new sound("crash.wav");
 // var obstacle = new component(15, 195, "red", 465, 105);
 var myObstacles = [];
@@ -59,8 +59,8 @@ function extracted() {
         var heightMax1 = y - gap;
         var height1 = Math.floor(Math.random()*heightMax1);
         var height2 = y - height1 - gap;
-        myObstacles.push(new component(15, height1, "fire.jpg", x, 0, "pattern"));
-        myObstacles.push(new component(15, height2, "fire.jpg", x, y-height2, "pattern"));
+        myObstacles.push(new component(60, height1, "coronavirus.png", x, 0, "image"));
+        myObstacles.push(new component(60, height2, "coronavirus.png", x, y-height2, "image"));
     }
     myObstacles.forEach((item) => {
         item.update();
