@@ -8,7 +8,7 @@ const round2 = new Rounds("Round 3 ", 15, 4, 150, 1.2);
 const round3 = new Rounds("Round 4 ", 20, 4,100, 1.5);
 const round4 = new Rounds("Round 5 ", 25, 5, 50, 2);
 
-var yellowGamePiece = new component(65, 65, "dino.png", 50, 60, "image");
+var yellowGamePiece = new component(65, 65, "mehdi.png", 50, 60, "image");
 var explosion = new component(65, 65, "explosion.png", 50, 60, "image");
 var myScore = new component("20px", "Consolas", "white", 10, 20, "text");
 var mySound = new sound("sound.wav");
